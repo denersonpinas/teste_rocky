@@ -1,0 +1,406 @@
+@charset "UTF-8";
+
+/* START - Resetando config padrão do browser  e Setando estilo de todo o documento 
+ * ===================================
+ */
+body, ul {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    width: auto; 
+    font-family: 'Montserrat', sans-serif;
+}
+section {
+    box-sizing: border-box;
+    padding: 0 7% 0 7%;
+    margin-bottom: 8.5%;
+}
+#corpo {
+    width: auto;
+    height: auto;
+    background-image: url('../image/web/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: local;
+    background-size: cover;   
+}
+.Content-bloco {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+p {
+    text-align: justify;
+    font-size: 9pt;
+    font-family: sans-serif;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+h2 {
+    font-size: 26pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0px;
+    padding-top: 2%;
+}
+.yellow {
+    color: #efe60b;
+}
+.ciano {
+    color: #1bd4e9;
+}
+/* END - Resetando config padrão do browser e Setando estilo de todo o documento
+ * =========================================
+ */
+
+
+/* Formatando section com id 'sec-inicial' 
+ * ========================================
+ */
+section#sec-inicial {
+    width: auto;    
+    margin-bottom: 0px;
+    text-align: center;
+    background-image: url('../image/web/s1\ ft1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: local;
+    background-size: cover;  
+}
+section#sec-inicial header#cabecalho {
+    width: auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* FORMATANDO MENU */
+section#sec-inicial header#cabecalho nav#nav h1 {
+    display: none;
+}
+section#sec-inicial header#cabecalho ul#menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.Btn-submenu, #sub-menu02, #sub-menu01 {
+    display: none;
+}
+
+/* 'cod para aumentar a area de contato do menu para touch' ---------
+ * ------- aumentar a area facilita o click em dispositivos moveis */
+section#sec-inicial header#cabecalho ul#menu a {
+    padding: 8px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 9pt;
+    font-weight: 600;
+    color: #fff;
+}
+section#sec-inicial header#cabecalho #btn-mobile {
+    display: none;
+}
+/* END - FORMATANDO MENU */
+
+section#sec-inicial h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 64pt;
+    padding-top: 42px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+section#sec-inicial p {
+    text-align: center;    
+    padding: 50px 0px 50px 0;
+    text-indent: 0px;
+    color: #fff;
+}
+section#sec-inicial button#btn-contato {
+    border: none;
+    border-radius: 25px;
+    background-color: #1bd4e9;    
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9pt;
+    font-weight: 600;
+    padding: 15px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    transition: .6s;
+}
+section#sec-inicial button#btn-contato:hover {
+    transform: scale(1.2);
+}
+/* END - Formatando section com id 'sec-inicial' 
+ * ========================================
+ */
+
+/* START - Formatando section com id 'sec-sobre' 
+ * ========================================
+ */
+section#sec-sobre h2 {
+    text-align: left; 
+}
+section#sec-sobre .container {
+    width: 52%;
+    padding: 15px;
+    margin-top: 7%;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    background-color: #fff;
+    box-shadow: 8px 8px 48px rgba(0, 0, 0, .5);
+}
+section#sec-sobre .container p {
+    text-indent: 0px;
+    text-align: left;
+}
+/* END - Formatando section com id 'sec-sobre' 
+ * ========================================
+ */
+
+/* START - Formatando section com id 'sec-servicos' 
+ * ========================================
+ */
+section#sec-servicos .Content-bloco div {    
+    margin: 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+section#sec-servicos .Content-bloco div h3 {
+    padding: 20px 10px;
+    color: #efe60b;
+    font-size: 13pt;
+}
+
+section#sec-servicos .Content-bloco div p {
+    padding: 15px 55px;
+    text-align: center;
+    text-indent: 0px;
+    font-size: 11pt;
+    color: #fff;
+}
+section#sec-servicos .Content-bloco #div-servicos, #div-midia, #div-implementacoes {
+    text-align: center;
+}
+section#sec-servicos .Content-bloco #div-servicos {
+    background-image: url('../image/web/s3\ ft1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: local;
+    background-size: 400px;      
+}
+section#sec-servicos .Content-bloco #div-servicos h3 {
+    text-transform: uppercase;    
+}
+section#sec-servicos .Content-bloco #div-midia {
+    background-image: url('../image/web/s3\ ft2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: local;
+    background-size: 400px; 
+}
+section#sec-servicos .Content-bloco #div-implementacoes{
+    background-image: url('../image/web/s3\ ft3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: local;
+    background-size: 400px; 
+}
+/* END - Formatando section com id 'sec-servicos' 
+ * ========================================
+ */
+
+/* START - Formatando section com id 'sec-diferenciais' 
+ * ========================================
+ */
+section#sec-diferenciais {
+     margin-bottom: 0px;
+     padding-bottom: 8%;
+}
+section#sec-diferenciais .Bl-diferenciais div {
+    width: 250px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+section#sec-diferenciais .Bl-diferenciais div img {
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+}
+
+section#sec-diferenciais .Bl-diferenciais #card-diferenciais01{
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)
+        ),
+        url('../image/web/s4\ ft1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: local;
+    background-size: 350px;   
+}
+
+section#sec-diferenciais .Bl-diferenciais #card-diferenciais01 p, #card-diferenciais02 p, #card-diferenciais03 p{
+    font-size: 9pt;
+    font-weight: 600;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+} 
+
+section#sec-diferenciais .Bl-diferenciais #card-diferenciais02{
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)
+        ),
+        url('../image/web/s4\ ft2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: local;
+    background-size: 350px;  
+}
+
+section#sec-diferenciais .Bl-diferenciais #card-diferenciais03{
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)
+        ),
+        url('../image/web/s4\ ft3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: local;
+    background-size: 350px; 
+}
+/* END - Formatando section com id 'sec-diferenciais' 
+ * ==================================================
+ */
+
+/* START - Formatando rodape 
+ * =========================
+ */
+ footer#rodape {
+    display: flex;
+    border-top: 51px solid #efe60b;
+    border-bottom: 51px solid #efe60b;
+    background-color: #191919;
+    padding: 3% 7% 3% 7%;
+    color: #fff;
+}
+footer#rodape .Sub-coluna {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+footer#rodape #col-esquerda, #col-direita{
+    width: 50%;
+    padding: 15px;
+}
+
+footer#rodape .Div-list, .Div-img, #row-contato {
+    padding-bottom: 30px;
+}
+
+/* Start - Formatando Coluna Esquerda */
+footer#rodape #col-esquerda {
+    padding-right: 23%;
+}
+footer#rodape .Div-list ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: space-between;
+}
+footer#rodape .Div-list ul li{
+    display: flex;
+    text-align: none;
+    margin: 0px;
+    padding: 0px;
+}
+footer#rodape .Div-list ul li a {
+    padding-left: 10px;
+    color: #fff;
+}
+footer#rodape .Div-img img.Social {
+    width: 28px;
+    height: 28px;
+    padding-left: 20px;
+}
+footer#rodape #col-esquerda span {
+    align-items: center;
+}
+footer#rodape #col-esquerda span img {
+    padding-right: 5px;
+}
+footer#rodape #col-esquerda span#row-contato {
+    display: flex;
+}
+footer#rodape #col-esquerda span#row-contato a {
+    font-size: 6pt;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+}
+footer#rodape #col-esquerda span#row-contato .Small-icone {
+    width: 14px;
+    height: 14px;
+    padding: 5px;
+}
+footer#rodape #col-esquerda p {
+    text-align: left;
+    text-indent: 0px;
+}
+/* End - Formatando Coluna Esquerda */
+
+/* Start - Formatando Coluna Direita */
+footer#rodape #col-direita #fcontato {
+    padding: 15px;
+    background-color: #818181;
+    box-sizing: border-box;
+}
+footer#rodape #col-direita #fcontato legend, label {
+    display: none;
+}
+footer#rodape #col-direita #fcontato fieldset{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+footer#rodape #col-direita #fcontato fieldset p, textarea, input {
+    text-indent: 0px;
+    width: 100%;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+    font-weight: 500;
+    outline: none;
+}
+footer#rodape #col-direita #fcontato fieldset input {
+    height: 40px;    
+}
+footer#rodape #col-direita #fcontato button {
+    width: 100%;
+    border: none;
+    background-color: #1bd4e9;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+    font-weight: 600;
+    padding: 15px;
+    text-transform: uppercase;
+}
+/* End - Formatando Coluna Direita */
+
+/* END - Formatando rodape 
+ * =========================
+ */
